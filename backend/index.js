@@ -48,6 +48,7 @@ const spotifyApi = new SpotifyWebApi({
 
 const app = express();
 
+// 登录
 app.get('/login', (req, res) => {
   res.redirect(spotifyApi.createAuthorizeURL(scopes));
 });
